@@ -2,139 +2,79 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Kết quả Tuyển Chọn</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-}
-
-.container{
-    text-align:center;
-}
-
-h1{
-    margin-bottom:40px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(2,250px);
-    gap:30px;
-    justify-content:center;
-}
-
-.card{
-    background:rgba(255,255,255,0.08);
-    border-radius:12px;
-    padding:25px;
-    backdrop-filter:blur(10px);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.position{
-    font-size:18px;
-    opacity:0.7;
-}
-
-.result{
-    font-size:22px;
-    font-weight:bold;
-    margin-top:15px;
-    letter-spacing:1px;
-}
-
-.hidden{
-    filter:blur(8px);
-}
-
-button{
-    margin-top:40px;
-    padding:12px 28px;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-    background:#ffcc00;
-}
-
-button:hover{
-    background:#ffd633;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Tuyển Dụng | LEAD(A)GAIN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .card-reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .card-reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
 </head>
+<body class="text-slate-900">
 
-<body>
+    <header class="py-16 px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
+            TO LIVE A LIFE WELL-LIVED
+        </h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+            Chúc mừng những cá nhân xuất sắc đã chính thức gia nhập đội ngũ. 
+            Cùng nhau, chúng ta sẽ viết nên những câu chuyện truyền cảm hứng.
+        </p>
+    </header>
 
-<div class="container">
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">01</div>
+                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Content Creator</h3>
+                <p class="text-xl font-bold text-slate-800 italic">Nguyễn Hoàng Nam</p>
+            </div>
 
-<h1>RESULT ANNOUNCEMENT</h1>
+            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">02</div>
+                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Graphic Designer</h3>
+                <p class="text-xl font-bold text-slate-800 italic">Lê Phan Anh Thư</p>
+            </div>
 
-<div class="grid">
+            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">03</div>
+                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Project Manager</h3>
+                <p class="text-xl font-bold text-slate-800 italic">Trần Minh Quang</p>
+            </div>
 
-<div class="card">
-<div class="position">Vị trí 01</div>
-<div class="result hidden">Nguyễn A</div>
-</div>
+            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">04</div>
+                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Communication Lead</h3>
+                <p class="text-xl font-bold text-slate-800 italic">Phạm Hoàng Yến</p>
+            </div>
 
-<div class="card">
-<div class="position">Vị trí 02</div>
-<div class="result hidden">Trần B</div>
-</div>
+        </div>
 
-<div class="card">
-<div class="position">Vị trí 03</div>
-<div class="result hidden">Lê C</div>
-</div>
+        <div class="mt-16 text-center">
+            <button class="bg-slate-900 text-white px-8 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors">
+                Xem chi tiết nhiệm vụ
+            </button>
+        </div>
+    </main>
 
-<div class="card">
-<div class="position">Vị trí 04</div>
-<div class="result hidden">Phạm D</div>
-</div>
+    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        © 2026 LEAD(A)GAIN Campaign. All rights reserved.
+    </footer>
 
-</div>
-
-<button onclick="reveal()">Công bố kết quả</button>
-
-</div>
-
-<script>
-
-function reveal(){
-
-let results = document.querySelectorAll(".result")
-
-results.forEach((item,index)=>{
-    
-    setTimeout(()=>{
-        item.classList.remove("hidden")
-    }, index*1200)
-
-})
-
-}
-
-</script>
-
+    <script>
+        // Hiệu ứng xuất hiện lần lượt
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-reveal');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('active');
+                }, index * 200);
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
