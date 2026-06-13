@@ -1,80 +1,205 @@
-# aboutsubleadmarcom
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kết Quả Tuyển Dụng | LEAD(A)GAIN</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        .card-reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
-        .card-reveal.active { opacity: 1; transform: translateY(0); }
-    </style>
+    <title>Smoothie. | Fresh & Organic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-slate-900">
+<body>
 
-    <header class="py-16 px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
-            TO LIVE A LIFE WELL-LIVED
-        </h1>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-            Chúc mừng những cá nhân xuất sắc đã chính thức gia nhập đội ngũ. 
-            Cùng nhau, chúng ta sẽ viết nên những câu chuyện truyền cảm hứng.
-        </p>
+    <header>
+        <div class="navbar container">
+            <a href="#" class="logo">Smoothie<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#hero">Trang Chủ</a>
+                <a href="#about">Về Chúng Tôi</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Liên Hệ</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 pb-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">01</div>
-                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Content Creator</h3>
-                <p class="text-xl font-bold text-slate-800 italic">Nguyễn Hoàng Nam</p>
+    <section id="hero" class="hero-section">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <span class="sub-title">100% Tự Nhiên & Nguyên Chất</span>
+                <h1>Chút Nhẹ Nhàng <br>Cho Ngày <span>Tươi Mát</span></h1>
+                <p>Nâng niu cơ thể bạn mỗi ngày bằng những ly smoothie đậm vị trái cây nhiệt đới, không đường hóa học, trọn vẹn dưỡng chất organic.</p>
+                <a href="#menu" class="btn">Khám Phá Menu <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-
-            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">02</div>
-                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Graphic Designer</h3>
-                <p class="text-xl font-bold text-slate-800 italic">Lê Phan Anh Thư</p>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&q=80&w=800" alt="Fresh Smoothie">
+                <div class="floating-badge">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Organic Certified</span>
+                </div>
             </div>
-
-            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">03</div>
-                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Project Manager</h3>
-                <p class="text-xl font-bold text-slate-800 italic">Trần Minh Quang</p>
-            </div>
-
-            <div class="card-reveal bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-6 font-bold text-xl">04</div>
-                <h3 class="text-sm uppercase tracking-widest text-slate-400 font-semibold mb-2">Communication Lead</h3>
-                <p class="text-xl font-bold text-slate-800 italic">Phạm Hoàng Yến</p>
-            </div>
-
         </div>
+    </section>
 
-        <div class="mt-16 text-center">
-            <button class="bg-slate-900 text-white px-8 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors">
-                Xem chi tiết nhiệm vụ
-            </button>
+    <section id="about" class="about-section">
+        <div class="about-container container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=80&w=800" alt="Fresh fruits">
+            </div>
+            <div class="about-content">
+                <span class="section-tag">Câu Chuyện Của Mình</span>
+                <h2>Sức Khỏe Đến Từ Sự Nguyên Bản</h2>
+                <p>Tại Smoothie., tụi mình tin rằng một lối sống lành mạnh không cần phải quá phức tạp. Mỗi ly sinh tố được xay đều là sự kết hợp hoàn hảo giữa trái cây tươi chuẩn VietGAP và các loại hạt dinh dưỡng cao cấp.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-apple-whole"></i>
+                        <div>
+                            <h4>Trái Cây Tươi Mỗi Ngày</h4>
+                            <p>Nhập mới trực tiếp từ nông trại organic vào mỗi buổi sáng.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-candy-cane"></i>
+                        <div>
+                            <h4>0% Đường Tinh Luyện</h4>
+                            <p>Vị ngọt tự nhiên từ quả chín và mật ong nguyên chất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-        © 2026 LEAD(A)GAIN Campaign. All rights reserved.
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Thực Đơn Tươi Mát</span>
+                <h2>Lựa Chọn Của Bạn</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                    <button class="filter-btn" data-filter="detox">Detox & Green</button>
+                    <button class="filter-btn" data-filter="energy">Năng Lượng</button>
+                    <button class="filter-btn" data-filter="berry">Berry Love</button>
+                </div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category="detox">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=80&w=600" alt="Green Detox">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Detox & Green</span>
+                        <h3>Green Garden</h3>
+                        <p class="ingredients">Cải xoăn kale, táo xanh, chuối, chanh tây và hạt chia.</p>
+                        <div class="card-footer">
+                            <span class="price">55.000đ</span>
+                            <button class="view-detail" data-title="Green Garden" data-desc="Dòng sinh tố thanh lọc cơ thể tối ưu với hàm lượng chất xơ cực cao từ cải Kale kết hợp vị chua nhẹ của táo xanh. Thích hợp cho buổi sáng nhẹ nhàng." data-img="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=80&w=600"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="energy">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&q=80&w=600" alt="Mango Energy">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Năng Lượng</span>
+                        <h3>Tropical Mango</h3>
+                        <p class="ingredients">Xoài chín, chanh dây, sữa hạnh nhân và yến mạch.</p>
+                        <div class="card-footer">
+                            <span class="price">60.000đ</span>
+                            <button class="view-detail" data-title="Tropical Mango" data-desc="Nạp ngay năng lượng tràn đầy với vị xoài cát chín mọng hòa quyện cùng chút chua thanh của chanh dây. Cung cấp vitamin C dồi dào cho ngày làm việc năng suất." data-img="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&q=80&w=600"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="berry">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&q=80&w=600" alt="Berry Smoothie">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Berry Love</span>
+                        <h3>Pinky Berry</h3>
+                        <p class="ingredients">Dâu tây, việt quất, sữa chua Hy Lạp và mật ong.</p>
+                        <div class="card-footer">
+                            <span class="price">65.000đ</span>
+                            <button class="view-detail" data-title="Pinky Berry" data-desc="Sự kết hợp ngọt ngào chống oxy hóa tuyệt vời từ các loại quả mọng. Sữa chua Hy Lạp giúp kết cấu mịn màng và bổ sung lợi khuẩn cho hệ tiêu hóa." data-img="https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&q=80&w=600"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container container">
+            <div class="contact-info">
+                <span class="section-tag">Liên Hệ</span>
+                <h2>Ghé Chơi Với <br>Tụi Mình</h2>
+                <p>Bạn có thắc mắc về công thức hay muốn đặt đơn hàng lớn? Đừng ngần ngại nhắn cho Smoothie. nhé!</p>
+                <div class="info-links">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Thành phố Hồ Chí Minh, Việt Nam</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+84 901 234 567</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@smoothie.vn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="form-contact">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tên của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email liên hệ" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Lời nhắn gửi đến Smoothie..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Smoothie. All rights reserved. Crafted with tươi mát.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        // Hiệu ứng xuất hiện lần lượt
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.card-reveal');
-            cards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.classList.add('active');
-                }, index * 200);
-            });
-        });
-    </script>
+    <div class="modal" id="detail-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="">
+                <div class="modal-text">
+                    <h3 id="modal-title">Tên Món</h3>
+                    <p id="modal-desc">Mô tả chi tiết món ăn ở đây...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
